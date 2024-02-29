@@ -2,6 +2,7 @@ import middleware from '../../middleware/middleware'
 import nextConnect from 'next-connect'
 import fs from 'fs'
 import { verifySignature } from "@govtechsg/open-attestation";
+import path from 'path'
 
 function validateJSON(body) {
   try {
