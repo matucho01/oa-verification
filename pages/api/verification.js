@@ -28,6 +28,8 @@ handler.post(async (req, res) => {
       let rawfiledata = fs.readFileSync(req.files.cert[0].path);
       let oajson = JSON.parse(rawfiledata);
       // console.log(oajson);
+      let verificationResult = verifySignature(oajson);
+      console.log(verificationResult);
       if (verifySignature(oajson)) {
         res.redirect('/success')
       } else {

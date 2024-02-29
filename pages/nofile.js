@@ -14,7 +14,7 @@ export default function Nofile() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="/">Open Attestation Verification App</a>
+          Welcome to <a href="/">EPN Certification Verification</a>
         </h1>
 
         <p className={styles.description}>
