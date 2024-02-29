@@ -19,7 +19,6 @@ export default function Success() {
 
         <p className={styles.description}>
           Technology demonstration based on Next.js and <a target="_blank" href="https://github.com/Open-Attestation">https://github.com/Open-Attestation</a>
-          <code className={styles.code}></code>
         </p>
 
         <div className={styles.grid}>

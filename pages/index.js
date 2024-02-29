@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,12 +12,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="/">Open Attestation Verification App</a>
+          Welcome to <a href="/">EPN Certification Verification</a>
         </h1>
 
         <p className={styles.description}>
           Technology demonstration based on Next.js and <a target="_blank" href="https://github.com/Open-Attestation">https://github.com/Open-Attestation</a>
-          <code className={styles.code}></code>
         </p>
 
         <div className={styles.grid}>
@@ -29,12 +27,14 @@ export default function Home() {
           >
             <h2>EPN Certification Verify &rarr;</h2>
             <p>
-              Please upload your EPN Certification generated from <b><a target="_blank" href="https://brynta69.com/">https://www.brynta69.com/</a></b>
+              Please upload your EPN Certification
               <p>&nbsp;</p>
               <form method="post" action="/api/verification" enctype="multipart/form-data">
-                <input name="cert" type="file" />
+                <input type="file" name="cert" id="file-input" className={styles.fileinputbutton} />
                 <p>&nbsp;</p>
-                <input type="submit" />
+                <button type="submit" className={styles.button}>
+                  Verify Certification
+                </button>
               </form>
 
             </p>

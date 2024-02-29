@@ -28,7 +28,7 @@ export default function Nofile() {
           <div
             className={styles.card}
           >
-            <h2>Vaccination HealthCert &rarr;</h2>
+            <h2>EPN Certification &rarr;</h2>
             <p>
               No file uploaded. Please try again.
             </p>
