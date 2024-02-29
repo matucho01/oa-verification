@@ -28,9 +28,9 @@ export default function Failed() {
           <div
             className={styles.card}
           >
-            <h2>Vaccination HealthCert &rarr;</h2>
+            <h2>EPN Certification Verify &rarr;</h2>
             <p>
-              Vaccination HealthCert Verification <font color="red">Failed</font>
+              EPN Certification Verification <font color="red">Failed</font>
             </p>
             <p>&nbsp;</p>
             <p>

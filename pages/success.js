@@ -28,9 +28,9 @@ export default function Success() {
           <div
             className={styles.card}
           >
-            <h2>Vaccination HealthCert &rarr;</h2>
+            <h2>EPN Certification Verify &rarr;</h2>
             <p>
-              Vaccination HealthCert Verification <font color="green">Success</font>
+              EPN Certification Verification <font color="green">Success</font>
             </p>
             <p>&nbsp;</p>
             <p>
