@@ -4,5 +4,5 @@
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
   "/api/verification": "pages/api/verification.js",
-  "/success": "pages/success.js"
+  "/failed": "pages/failed.js"
 }
