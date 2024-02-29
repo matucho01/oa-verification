@@ -27,9 +27,9 @@ export default function Home() {
           <div
             className={styles.card}
           >
-            <h2>Vaccination HealthCert &rarr;</h2>
+            <h2>EPN Certification Verify &rarr;</h2>
             <p>
-              Please upload your Vaccination HealthCert generated from <b><a target="_blank" href="https://www.healthcerts.gov.sg/">https://www.healthcerts.gov.sg/</a></b>
+              Please upload your EPN Certification generated from <b><a target="_blank" href="https://brynta69.com/">https://www.brynta69.com/</a></b>
               <p>&nbsp;</p>
               <form method="post" action="/api/verification" enctype="multipart/form-data">
                 <input name="cert" type="file" />
@@ -43,7 +43,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        Copyright	&copy; 2021 by Ong Khai Wei
+        Copyright	&copy; 2024 by MetaLogIQ
       </footer>
     </div>
   )

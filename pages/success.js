@@ -41,7 +41,7 @@ export default function Success() {
       </main>
 
       <footer className={styles.footer}>
-        Copyright	&copy; 2021 by Ong Khai Wei
+        Copyright	&copy; 2024 by MetaLogIQ
       </footer>
     </div>
   )

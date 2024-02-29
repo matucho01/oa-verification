@@ -24,7 +24,6 @@ handler.post(async (req, res) => {
     
   } else {
       // File exists.
-
       let rawfiledata = fs.readFileSync(req.files.cert[0].path);
       let oajson = JSON.parse(rawfiledata);
       // console.log(oajson);
