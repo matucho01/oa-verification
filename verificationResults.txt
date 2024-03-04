@@ -1,3 +1,0 @@
-×  error   The document has been tampered
-×  error   The issuer identity has not been verified
-√  success   The document has been issued
