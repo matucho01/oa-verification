@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/api/verification": "pages/api/verification.js",
-  "/failed": "pages/failed.js"
+  "/failed": "pages/failed.js",
+  "/api/verification": "pages/api/verification.js"
 }
