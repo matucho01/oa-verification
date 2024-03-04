@@ -51,7 +51,7 @@ handler.post(async (req, res) => {
 
     console.log(isValid(fragments));
 
-    // Traducción de los mensajes
+    // Message translation
     const translatedResults = results.map((result) => {
       let status;
       if (result.status === 'VALID') {
@@ -63,14 +63,29 @@ handler.post(async (req, res) => {
       let message;
       switch (result.name) {
         case 'OpenAttestationHash':
-          message = 'The document has not been tampered';
+          if (status === '√  success') {
+            message = 'The document has not been tampered';
+          } else if (status === '×  error') {
+            message = 'The document has been tampered';
+          }
           break;
-        case 'OpenAttestationDnsTxtIdentityProof':
-          message = 'The issuer identity has not been verified';
-          break;
+
         case 'OpenAttestationEthereumDocumentStoreStatus':
-          message = 'The document has been issued';
+          if (status === '√  success') {
+            message = 'The document has been issued';
+          } else if (status === '×  error') {
+            message = 'The document has not been issued';
+          }
           break;
+
+        case 'OpenAttestationDnsTxtIdentityProof':
+          if (status === '√  success') {
+            message = 'The issuer identity has been verified';
+          } else if (status === '×  error') {
+            message = 'The issuer identity has not been verified';
+          }
+          break;
+
         default:
           message = 'Unknown verification';
           break;
@@ -83,7 +98,7 @@ handler.post(async (req, res) => {
 
     const outputFilePath = 'verificationResults.txt';
 
-    // Escribe los resultados en un archivo
+    // Write results to a file
     fs.writeFileSync(outputFilePath, translatedResults.join('\n'), 'utf-8');
     console.log(`Results written to: ${outputFilePath}`);
 
